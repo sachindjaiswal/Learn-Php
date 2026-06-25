@@ -5,7 +5,7 @@
     $order = $_GET["dishname"];
     if(isset($_GET["bill"])){
         echo "You just pressed the get bill button <br>";
-        if(empty($order) || empty($_GET["dishquant"])){
+        if(isset($order) && isset($_GET["dishquant"]) && !isset($_GET["paymentoption"])){
             echo "You need to enter both dishname and quantity <br>";
         }
     }

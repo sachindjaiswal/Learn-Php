@@ -7,11 +7,17 @@
 </head>
 <body>
     <form action="hotelForms.php" method="get">
+        <h5>Place your order</h5>
         <label>dish name: </label>
         <input type="text" name="dishname">
 
         <label>dish quantity: </label>
         <input type="number" name="dishquant">
+        <br>
+        <h5>Payment Option</h5>
+        <input type="radio" name="paymentoption" value="UPI">UPI
+        <input type="radio" name="paymentoption" value="Card">Card
+        <input type="radio" name="paymentoption" value="Cash">Cash<br>
         
         <input type="submit" name="bill" value="get-Bill">
     </form>
