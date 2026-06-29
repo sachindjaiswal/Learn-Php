@@ -26,7 +26,7 @@
         return  $hypo;
     }
     if($_POST["submit"]){
-
+        echo hypo($sideA,$sideB);
     
     }
 ?>
