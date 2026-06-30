@@ -6,6 +6,7 @@
     echo $menus["biryani"];
     foreach($menus as $dish=>$price ){
          echo " {$dish} = {$price} <br> ";
+         echo "difjdff" ;
     }
 
 
