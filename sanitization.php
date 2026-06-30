@@ -25,7 +25,7 @@
         $age = filter_input(INPUT_POST , "age" , FILTER_SANITIZE_NUMBER_INT); 
         $email = filter_input(INPUT_POST , "email" , FILTER_SANITIZE_EMAIL);
         echo "Hello {$username} you are {$age} years old and you mail is {$email}";
-        echo "Dummy"
+        echo "Dummy";
 
     }
 
