@@ -1,3 +1,16 @@
+<?php
+
+    session_start();
+    $username = $_SESSION["username"];
+    $password = $_SESSION["password"];
+    if(empty($username) || empty($password)){
+        header("Location: login.php");
+    }else{
+        echo "{$username}" ;
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
